@@ -28,7 +28,6 @@ Entao("as informações cadastradas serão exibidas") do
 end
 
 Dado("que eu esteja logado com usuário válido no site Automation Practice") do
-  	#login
   	visit'http://automationpractice.com'
   	find('a.login').click
   	assert_text('Authentication')
@@ -37,10 +36,7 @@ Dado("que eu esteja logado com usuário válido no site Automation Practice") do
   	click_button('SubmitLogin')
 end
   
-
-
 Quando("acessar e editar as informações pessoais") do	
-	#editando
 	click_link('My personal information')
 	#find(".id_gender2[value='Mrs.']").select_option 
 	find(".id_gender2[value='label.top.']").select_option 
