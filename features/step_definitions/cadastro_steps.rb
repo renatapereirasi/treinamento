@@ -31,17 +31,25 @@ Dado("que eu esteja logado com usuário válido no site Automation Practice") do
   	visit'http://automationpractice.com'
   	find('a.login').click
   	assert_text('Authentication')
-  	find('#email').set('yodinha3@mailinator.com')
+  	find('#email').set('yodinha2@mailinator.com')
   	fill_in('passwd',:with=>'Teste123')
   	click_button('SubmitLogin')
 end
   
 Quando("acessar e editar as informações pessoais") do	
 	click_link('My personal information')
-	#find(".id_gender2[value='Mrs.']").select_option 
-	find(".id_gender2[value='label.top.']").select_option 
+	find('#uniform-id_gender1').click
+	find("#days option[value='18']").select_option
+	find("#uniform-months option[value='3']").select_option 
+	find("#uniform-years option[value='1992']").select_option
+	fill_in('old_passwd',:with=>'Teste123')
+	find("#uniform-newsletter").select_option
+	find("#uniform-optin").select_option
+	click_button('Save')
+	sleep 4
+	 
 end
 
 Entao("verei a mensagem {string}") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+  assert_text('Your personal information has been successfully updated.')
 end
