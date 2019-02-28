@@ -14,7 +14,7 @@ Quando("eu efetuar o cadastro com sucesso") do
 	fill_in('lastname',:with=>'Morrison')
 	fill_in('address1',:with=>'Av Rotary 600')
 	fill_in('city',:with=>'São Bernardo do Campo')
-	find(".id_state option[value='10']").select_option  
+	find(".id_state option[value='10']").select_option
 	fill_in('postcode',:with=>'09721')
 	fill_in('other',:with=>'05511976258935')
 	fill_in('phone',:with=>'5511971945915')
