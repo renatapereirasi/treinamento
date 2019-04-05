@@ -1,4 +1,4 @@
-Dado('que esteja no site vcmais.com') do 
+Dado('que esteja no site vcmais.com') do
   visit 'https://vcmais.com/'
 end
 
