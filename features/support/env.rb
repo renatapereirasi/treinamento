@@ -10,10 +10,10 @@ Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(app, browser: :chrome)
 end
 
-# Setando a configuração do driver como padrão
+# Setando a configuracao do driver como padrao
 Capybara.default_driver = :selenium
 
-# timeout padrão na execução
+# timeout padrao na execucao
 Capybara.default_max_wait_time = 15
 
 # Maximizar a tela ao iniciar o teste
