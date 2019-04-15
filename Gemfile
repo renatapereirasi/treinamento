@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'cucumber'
-gem 'rspec'
-gem 'rake'
-gem 'selenium-webdriver'
 gem 'capybara'
+gem 'cucumber'
 gem 'page_object'
 gem 'pry'
+gem 'rake'
+gem 'rspec'
+gem 'selenium-webdriver'
