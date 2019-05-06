@@ -10,6 +10,6 @@ class Texto < SitePrism::Page
   def cadastrar
     email_txt.set 'email@email.com'
     page.has_content?(email_msg)
-    clicar_btn.click
+    click_btn.click
   end
 end
