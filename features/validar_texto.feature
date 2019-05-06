@@ -1,3 +1,5 @@
+#language: pt
+#utf-8
 Funcionalidade: Validar texto
 	Eu como usuário do site vcmais.com
 	Quero me cadastrar no site vcmais.com

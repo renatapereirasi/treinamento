@@ -4,7 +4,7 @@ class Texto < SitePrism::Page
 
   element :email_txt, '#email'
   element :email_msg, 'input#email.valid'
-  element :clicar_btn, '#btn-signup'
+  element :click_btn, '#btn-signup'
   element :success_msg, '.animated.fadeInUp.success'
 
   def cadastrar
